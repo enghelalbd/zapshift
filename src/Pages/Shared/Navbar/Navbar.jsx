@@ -1,7 +1,20 @@
 import React from "react";
 import Logo from "../../../Components/Logo/Logo";
+import { NavLink } from "react-router";
 
 const Navbar = () => {
+  const Coversgelink = (
+    <>
+      <li>
+        {" "}
+        <NavLink to="/coverage">Coverage</NavLink>
+      </li>
+      <li>
+        {" "}
+        <NavLink to="/reviews">Reviews</NavLink>
+      </li>
+    </>
+  );
   return (
     <div>
       <div className="navbar bg-base-100 shadow-sm">
